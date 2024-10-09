@@ -22,7 +22,7 @@ class Solution:
 
             for i in range(n):
                 node = q.popleft()
-                level.append(node)
+                level.append(node.val)
 
                 if node.left: q.append(node.left)
                 if node.right: q.append(node.right)
